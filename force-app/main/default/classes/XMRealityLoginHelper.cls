@@ -4,14 +4,7 @@
 |
 |  Filename: XMRealityLoginHelper.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
-|
-|  Description: XMR Login user authentication controller class which identifies whether user session timed out or not.
-|		 		If user session is not timed out, XMR session with user details are returned
-| 				If user session is timed out, HTTP Callout to authenticate user.
-|      
-| Change Log:
-| 2021-11-06  Jayanth Balakrishna  Initial Development.
+|  Author: Umar Mohammad
 ----------------------------------------------------------------------------
 */
 public class XMRealityLoginHelper {

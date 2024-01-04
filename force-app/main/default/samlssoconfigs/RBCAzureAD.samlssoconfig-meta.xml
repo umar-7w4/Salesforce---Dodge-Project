@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>Username</identityMapping>
+    <issuer>https://sts.windows.net/b62ae4e2-d68f-4f11-9643-f9ccf49460e5/</issuer>
+    <loginUrl>https://login.microsoftonline.com/b62ae4e2-d68f-4f11-9643-f9ccf49460e5/saml2</loginUrl>
+    <name>RBCAzureAD</name>
+    <oauthTokenEndpoint>https://dodgeindustrial--uat.sandbox.my.salesforce.com/services/oauth2/token</oauthTokenEndpoint>
+    <redirectBinding>true</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P18N000000oBFt</requestSigningCertId>
+    <salesforceLoginUrl>https://dodgeindustrial--uat.sandbox.my.salesforce.com</salesforceLoginUrl>
+    <samlEntityId>https://dodgeindustrial--uat.sandbox.my.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <singleLogoutBinding>RedirectBinding</singleLogoutBinding>
+    <singleLogoutUrl>https://login.microsoftonline.com/b62ae4e2-d68f-4f11-9643-f9ccf49460e5/saml2</singleLogoutUrl>
+    <useConfigRequestMethod>false</useConfigRequestMethod>
+    <useSameDigestAlgoForSigning>true</useSameDigestAlgoForSigning>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIC8DCCAdigAwIBAgIQYdUAbWf+15BMms2GJT8QgjANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yMzA0MTgxNDU0MzBaFw0yNjA0MTgxNDU0MjRaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxzDmkvAJXShvC0sKugcu/zUn8bQdDtmTXaw8ciddTqhKKyVv/QJmh2uVbIZHMyk9jxNJi7loj6+3IVrh2fejOeD7FP+3YvLuP8n/hNITMI7hlKKbTv3FrocwChOuE4rLk0gOVq3D4CnucC6CEi238lc992APyjBQ/Zy+kxfKPbdkXjPoaTX7LWbSpf5lykZHnDhmnuaoFvLhjfRYP6NFyFgXTz7M4xXT4sm4o/Wih9Pz9IS0hJg/fEbwGmiE064tqQ/3d+z0+f3bQ8g/PSKnsOta+u7xgJ+JS5lWVN/b2IHz5aZ03B6vLqiM+NFeRJCSnlFyoB2jAXvWusgVk9JCFQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQCBoVOL23uu2zYr9mTv4pFEg4sXTB1MqWTuaQIMwJxdDC/cY9mOf+SyJYfkQqhM+9AP1CHI/QDptR3wqu8s9xK9m+DZ7K6UAWe2+mj5J020zckQDGjJHo7GxkHVg6J2JpGD20NMeSZO1POOEN5Wnj68IWzYQKUSh13a4GFmik2gEAGpevyUvDUsK5bK2rPi1VQ0doUlqT3BvCHd0xXJYPPC17xSGu/e68gglEP4TYnFdkpJt3sOSW9en5L4/v94OytbY8v67icGBvhFUTt45Gz7RYmSzQYGMwCMXe2eOkWCqSg9FGRfwSbSws3+Ut1RG5ReXvFF7jYpNTaozXwp16yt</validationCert>
+</SamlSsoConfig>

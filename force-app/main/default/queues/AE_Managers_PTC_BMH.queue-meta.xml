@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>AE - Managers - PTC &amp; BMH</name>
+    <queueMembers>
+        <users>
+            <user>jdphillips@dodgeindustrial.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>KnowledgeArticleVersion</sobjectType>
+    </queueSobject>
+</Queue>

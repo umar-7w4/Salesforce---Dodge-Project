@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Application Engineering Department Manager</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Application Engineering Department Manager</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>VP_R_D_Engineering</parentRole>
+</Role>

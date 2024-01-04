@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>noreply@dodgenoreply.com</email>
+    <name>Application Engineering Mounted Bearings</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Application_Engineering_Mounted_Bearings</publicGroup>
+        </publicGroups>
+        <users>
+            <user>blyons@dodgeindustrial.com</user>
+            <user>dstanton@dodgeindustrial.com</user>
+            <user>egold@dodgeindustrial.com</user>
+            <user>kbartley@dodgeindustrial.com</user>
+            <user>mkelly@dodgeindustrial.com</user>
+            <user>terickson@dodgeindustrial.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>DodgeServiceChat</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

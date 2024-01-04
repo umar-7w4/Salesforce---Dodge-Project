@@ -1,0 +1,17 @@
+<!--
+ -  Visualforce: XMRealityPopupLogin
+ -
+ -  Filename: XMRealityPopupLogin.page
+ -
+ -  Author: Peter Friberg, Fluido Sweden AB
+ -
+ -  Description:
+ -     XXXXX
+ -
+ - Change Log:
+ - 2021-11-03  Peter Friberg  Initial Development.
+ -->
+
+<apex:page id="XMRealityPopupLogin" standardStylesheets="false" docType="html-5.0" showHeader="false"
+           controller="RedirCtrl" action="{!urlRedirection}">
+</apex:page>

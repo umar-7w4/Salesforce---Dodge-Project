@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Inside Sales - North Central</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Inside_Sales_North_Central</publicGroup>
+        </publicGroups>
+        <users>
+            <user>ahaynes@dodgeindustrial.com</user>
+            <user>csalley@dodgeindustrial.com</user>
+            <user>kbaker@dodgeindustrial.com</user>
+            <user>lfranklin@dodgeindustrial.com</user>
+            <user>nkuebel@dodgeindustrial.com</user>
+            <user>rlindsey@dodgeindustrial.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

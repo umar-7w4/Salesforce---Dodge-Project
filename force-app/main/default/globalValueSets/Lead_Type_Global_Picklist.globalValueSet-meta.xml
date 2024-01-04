@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>POW</fullName>
+        <default>false</default>
+        <label>Power</label>
+    </customValue>
+    <customValue>
+        <fullName>REC</fullName>
+        <default>false</default>
+        <label>Recycling</label>
+    </customValue>
+    <customValue>
+        <fullName>AIR</fullName>
+        <default>false</default>
+        <label>Air Handling</label>
+    </customValue>
+    <customValue>
+        <fullName>F&amp;B</fullName>
+        <default>false</default>
+        <label>Food &amp; Beverage</label>
+    </customValue>
+    <customValue>
+        <fullName>P&amp;FP</fullName>
+        <default>false</default>
+        <label>Paper &amp; Forest Products</label>
+    </customValue>
+    <customValue>
+        <fullName>AGG</fullName>
+        <default>false</default>
+        <label>Aggregate</label>
+    </customValue>
+    <customValue>
+        <fullName>WW</fullName>
+        <default>false</default>
+        <label>Water &amp; Waste Water</label>
+    </customValue>
+    <customValue>
+        <fullName>UH</fullName>
+        <default>false</default>
+        <label>Unit Handling</label>
+    </customValue>
+    <customValue>
+        <fullName>CEM</fullName>
+        <default>false</default>
+        <label>Cement</label>
+    </customValue>
+    <customValue>
+        <fullName>MIN</fullName>
+        <default>false</default>
+        <label>Mining</label>
+    </customValue>
+    <customValue>
+        <fullName>GRN</fullName>
+        <default>false</default>
+        <label>Grain</label>
+    </customValue>
+    <customValue>
+        <fullName>OTH</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Lead Type Global Picklist</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

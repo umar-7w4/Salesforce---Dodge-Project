@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Pricing_request_owner_approval</fullName>
+        <description>Pricing request owner approval</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Pricing_request_notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Pricing_Request_Status_Update_Complete</fullName>
+        <field>Status__c</field>
+        <literalValue>Completed</literalValue>
+        <name>Pricing Request Status Update - Complete</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pricing_Request_Status_Update_Draft</fullName>
+        <field>Status__c</field>
+        <literalValue>Draft</literalValue>
+        <name>Pricing Request Status Update - Draft</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pricing_Request_Status_Update_In_Revie</fullName>
+        <field>Status__c</field>
+        <literalValue>In Review</literalValue>
+        <name>Pricing Request Status Update - In Revie</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Lock_Flag_to_false</fullName>
+        <field>Lock_Flag__c</field>
+        <literalValue>0</literalValue>
+        <name>Set Lock Flag to false</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Lock_Flag_to_true</fullName>
+        <field>Lock_Flag__c</field>
+        <literalValue>1</literalValue>
+        <name>Set Lock Flag to true</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

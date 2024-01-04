@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>DodgeServiceChat</name>
+    <queueMembers>
+        <users>
+            <user>deepa.govindarajan@gerent.com.dodge</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>DodgeServiceChat</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>LiveChatTranscript</sobjectType>
+    </queueSobject>
+</Queue>

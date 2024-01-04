@@ -1,0 +1,79 @@
+<!--
+ -  Lightning Markup: XMRealityFederatedLogin
+ -
+ -  Filename: XMRealityFederatedLogin.cmp
+ -
+ -  Author: Peter Friberg, Fluido Sweden AB
+ -
+ -  Description:
+ -     XXXXX
+ -
+ - Change Log:
+ - 2021-11-02  Peter Friberg  Initial Development.
+ -->
+
+<aura:component description="XMRealityFederatedLogin"
+                access="global"
+                implements="flexipage:availableForAllPageTypes"
+                controller="XMRealityWebhookController">
+
+    <lightning:empApi aura:id="empApi"/>
+    <lightning:utilityBarAPI aura:id="UtilityBar"/>
+    <lightning:workspaceAPI aura:id="workspace"/>
+
+    <aura:attribute name="userId" access="public" type="String"/>
+    <aura:attribute name="subscription" type="Map"/>
+    <aura:attribute name="showIframe" type="Boolean" default="true"/>
+    <aura:attribute name="federatedLogin" type="Boolean" default="false"/>
+    <aura:attribute name="teamsLoginPage" type="String" default="false"/>
+    <aura:attribute name="salesforceUrl" type="String" default="false"/>
+    <aura:attribute name="siteUrl" type="String" default="false"/>
+    <aura:attribute name="usrDetails" type="Object"/>
+    <aura:attribute name="recordLists" type="String[]" />
+    <aura:handler event="c:XMRInitiateCallLogs" action="{!c.handleInitiateCallLog}"/>
+    <aura:handler event="c:XMRSignIn" action="{!c.handleSignIn}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:registerEvent name="XMRSignInSignOut" type="c:XMRSignInSignOut"/>
+
+    <aura:if isTrue="{!v.showIframe}">
+        <aura:if isTrue="{!v.federatedLogin}">
+            <div class="slds-p-top_small">
+                <div class="slds-p-around_small" style="font-size: 1.1rem;">
+                    <img style="width: 8%;margin-top: -0.5%;" src="{!$Resource.XMRealityLogo}" alt="XMReality Logo"/>
+                    <b>&nbsp;XMReality</b>
+                </div>
+                <div class="slds-p-around_small slds-p-top_small lgc-bg">
+                    <lightning:button name="Federated Login" title="Federated Login" type="button"
+                                      label="Sign in" variant="brand" class="btn-100-w"
+                                      onclick="{!c.popupLoginWindow}"/>
+                </div>
+            </div>
+            <aura:set attribute="else">
+                <iframe src="{!'https://teams-integration.prod.xmreality.net/auth.html?redirect_uri=https://sdo-demo-main-166ce2cf6b6-17-17c78cf757e.secure.force.com/xmreality/services/apexrest/webhook/&amp;state=' + v.userId}"
+                        width="100%" height="100%"></iframe>
+            </aura:set>
+        </aura:if>
+        <aura:set attribute="else">
+            <div>
+                <div class="slds-grid slds-gutters slds-p-top_medium" style="width: 67%;margin-left: 1%;">
+                    <div class="slds-col slds-size_1-of-3" style="width: 23%;">
+                    <span>
+                        <lightning:icon iconName="action:user" alternativeText="user" title="user" size="medium"/>
+                    </span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-3 slds-truncate" style="width:93%;margin-top: 2%;">
+                        <span>
+                            <b>{!v.usrDetails.XMR_Name__c}</b> <br/>
+                            {!v.usrDetails.XMR_Username__c}
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-3" style="margin-top: 8%;">
+                        <a onclick="{!c.handleUserLogOut}">
+                            <b>Log out</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aura:set>
+    </aura:if>
+</aura:component>

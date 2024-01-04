@@ -1,0 +1,22 @@
+<aura:component
+        implements="force:appHostable,force:hasRecordId,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+        access="global">
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="displayXMR" type="Boolean" default="true"/>
+    <aura:attribute name="recordLists" type="String[]"/>
+    <aura:registerEvent name="XMRSignIn" type="c:XMRSignIn"/>
+    <aura:registerEvent name="XMRInitiateCallLogs" type="c:XMRInitiateCallLogs"/>
+    <aura:handler event="c:XMRSignInSignOut" action="{!c.handleSignInSignOut}"/>
+
+    <force:recordData aura:id="forceRecord"
+                      recordId="{!v.recordId}"
+                      fields="LastModifiedDate"
+                      recordUpdated="{!c.recordUpdated}"/>
+
+    <div>
+        <aura:if isTrue="{!v.displayXMR}">
+            <c:xMRApp aura:id="xMRAppId" recordId="{!v.recordId}" onsigninopen="{!c.handleOpenSignIn}"
+                      oninitiatecalllog="{!c.handleinitiatecalllog}"/>
+        </aura:if>
+    </div>
+</aura:component>

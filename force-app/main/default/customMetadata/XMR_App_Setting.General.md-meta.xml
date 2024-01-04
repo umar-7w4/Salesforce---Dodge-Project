@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>General</label>
+    <protected>false</protected>
+    <values>
+        <field>TeamsIntegrationLoginPage__c</field>
+        <value xsi:type="xsd:string">https://teams-integration.prod.xmreality.net/auth.html?redirect_uri=</value>
+    </values>
+    <values>
+        <field>Use_Federated_Login__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+</CustomMetadata>

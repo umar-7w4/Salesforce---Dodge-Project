@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Industry Segment Manager - MAC</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Industry Segment Manager - MAC</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Director_Business_Development</parentRole>
+</Role>

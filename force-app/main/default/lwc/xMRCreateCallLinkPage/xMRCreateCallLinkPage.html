@@ -1,0 +1,36 @@
+<template>
+    <div class="slds-p-top_medium ">
+        <b class="slds-p-around_medium" style="font-size: 1.1rem;">
+            <img style="width: 6%;margin-top: -0.5%;" src={XMRlogo}> &nbsp;XMReality
+        </b>
+
+        <template if:false={isValidToken}>
+            <div class="slds-p-around_medium slds-p-top_medium lgc-bg">
+                <lightning-button variant="brand" label="Sign in" title="Sign in" onclick={handleSignin} class=""
+                                  style="display: grid; width: 100%"></lightning-button>
+            </div>
+        </template>
+
+        <template if:true={isValidToken}>
+            <div class="slds-p-left_medium slds-p-right_medium slds-p-bottom_small slds-p-top_xx-small lgc-bg">
+                <lightning-input type="text" label="Call Link Recipient" placeholder="Map Recipient Name"
+                                 value={recipientName} onchange={handleRecipientChange}
+                                 disabled="true"></lightning-input>
+            </div>
+            <div class="slds-p-left_medium slds-p-right_medium">
+                <b style="font-weight: 500;">Link will expire {linkTimeOut} hour after it has been created</b>
+            </div>
+            <div class="slds-p-around_medium slds-p-top_medium lgc-bg">
+                <lightning-button variant="brand" label="Create Call Link" title="Create Call Link"
+                                  onclick={handleCreateLink} class=""
+                                  style="display: grid; width: 100%"></lightning-button>
+            </div>
+
+
+        </template>
+    </div>
+
+    <template if:true={isSpinner}>
+        <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+    </template>
+</template>

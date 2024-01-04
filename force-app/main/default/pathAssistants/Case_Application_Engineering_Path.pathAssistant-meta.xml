@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Case - Application Engineering Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Status</fieldNames>
+        <fieldNames>Sub_Status__c</fieldNames>
+        <fieldNames>Closure_Reason__c</fieldNames>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Status</fieldNames>
+        <fieldNames>Sub_Status__c</fieldNames>
+        <picklistValueName>In Progress</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Application_Engineering</recordTypeName>
+</PathAssistant>

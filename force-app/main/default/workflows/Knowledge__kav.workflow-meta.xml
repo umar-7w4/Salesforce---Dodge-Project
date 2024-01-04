@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Send_Email_to_AE_Manager</fullName>
+        <ccEmails>prasad.jagilinki@gerent.com</ccEmails>
+        <description>Send Email to AE Manager</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Manager_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Knowledge_Approval_Request_Article_1662550816541</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_to_AE_Owner</fullName>
+        <description>Send Email to AE Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_Template_after_Approval_1662552779732</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_email_to_approvers</fullName>
+        <description>Send email to approvers</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Inside_Sales_Knowledge_Approver</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Knowledge_Approval_Request_Article_1662550816541</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_email_to_manager</fullName>
+        <description>Send email to manager</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Manager_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Knowledge_Approval_Request_Article_1662550816541</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_email_to_manager_AE</fullName>
+        <description>Send email to manager(AE)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Manager_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_Template_after_Approval_1662552779732</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_email_to_manager_Application_Engineering</fullName>
+        <description>Send email to manager(Application Engineering)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Manager_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Knowledge_Approval_Request_Article_1662550816541</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_email_to_owner</fullName>
+        <description>Send email to owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_Template_after_Approval_1662552779732</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_email_to_owner_IS</fullName>
+        <description>Send email to owner(IS)</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_Template_after_Approval_1662552779732</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Manager_email_update</fullName>
+        <field>Manager_Email__c</field>
+        <formula>Owner:User.Manager.Email</formula>
+        <name>Manager email update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Manager_Email</fullName>
+        <field>Manager_Email__c</field>
+        <formula>Owner:User.Manager.Email</formula>
+        <name>Update Manager Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Manager_Email_AE</fullName>
+        <field>Manager_Email__c</field>
+        <formula>Owner:User.Manager.Email</formula>
+        <name>Update Manager Email(AE)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Validation_Status</fullName>
+        <field>ValidationStatus</field>
+        <literalValue>Validated</literalValue>
+        <name>Update Validation Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Validation_Status_IS</fullName>
+        <field>ValidationStatus</field>
+        <literalValue>Validated</literalValue>
+        <name>Update Validation Status(IS)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_the_Status_to_In_Review</fullName>
+        <field>ValidationStatus</field>
+        <literalValue>In Review</literalValue>
+        <name>Update the Status to In Review</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_the_Status_to_In_Review_AE</fullName>
+        <field>ValidationStatus</field>
+        <literalValue>In Review</literalValue>
+        <name>Update the Status to In Review(AE)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <knowledgePublishes>
+        <fullName>Approve_and_Publish</fullName>
+        <action>Publish</action>
+        <label>Approve and Publish</label>
+        <language>en_US</language>
+        <protected>false</protected>
+    </knowledgePublishes>
+    <knowledgePublishes>
+        <fullName>Approve_and_Publish_IIoT</fullName>
+        <action>Publish</action>
+        <label>Approve and Publish (IIoT)</label>
+        <language>en_US</language>
+        <protected>false</protected>
+    </knowledgePublishes>
+    <knowledgePublishes>
+        <fullName>Approve_and_Publish_MB</fullName>
+        <action>Publish</action>
+        <label>Approve and Publish (MB)</label>
+        <language>en_US</language>
+        <protected>false</protected>
+    </knowledgePublishes>
+    <knowledgePublishes>
+        <fullName>Approve_and_Publish_PTC</fullName>
+        <action>Publish</action>
+        <label>Approve and Publish (PTC)</label>
+        <language>en_US</language>
+        <protected>false</protected>
+    </knowledgePublishes>
+</Workflow>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <submitter>Pricing_Manager</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>Pricing_Specialist</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Product_Management_Bearings_Queue</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Bearings approval step</label>
+        <name>Bearings_approval_step</name>
+    </approvalStep>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND( Text(Product__r.Family)= &apos;Mounted Bearings&apos;, Text(Status__c) = &apos;Draft&apos;)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>PRP_Status_Update_Bearing_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>PRP_Status_Update_Bearing_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>PRP_Status_Update_Bearing_In_Review</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Update_submission_date</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Pricing Request Product - Bearing</label>
+    <processOrder>1</processOrder>
+    <recallActions>
+        <action>
+            <name>PRP_Status_Update_Draft</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

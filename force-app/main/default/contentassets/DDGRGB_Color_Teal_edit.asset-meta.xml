@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>true</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>DDGRGB_Color_Teal_edit</masterLabel>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>DDG-RGB_┬«_Color_Teal  edit.jpg</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Inside Sales - Rocky Mountain</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Inside_Sales_Rocky_Mountain</publicGroup>
+        </publicGroups>
+        <users>
+            <user>astansell@dodgeindustrial.com</user>
+            <user>acathcart@dodgeindustrial.com</user>
+            <user>amalone@dodgeindustrial.com</user>
+            <user>btanguay@dodgeindustrial.com</user>
+            <user>dhammett@dodgeindustrial.com</user>
+            <user>estoner@dodgeindustrial.com</user>
+            <user>jheldman@dodgeindustrial.com</user>
+            <user>mcoggins@dodgeindustrial.com</user>
+            <user>mleontuk@dodgeindustrial.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

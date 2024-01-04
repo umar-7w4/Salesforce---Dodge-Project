@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Share_All_Cases</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Share All Cases</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Application Engineering,Inside Sales</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_R_W_access_to_Application_Engineering_Cases</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share R/W access to Application Engineering Cases</label>
+        <sharedTo>
+            <roleAndSubordinates>Application_Engineering_Department_Manager</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_R_W_access_to_Inside_Sales_Cases</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share R/W access to Inside Sales Cases</label>
+        <sharedTo>
+            <roleAndSubordinates>Director_Inside_Sales</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Inside Sales</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

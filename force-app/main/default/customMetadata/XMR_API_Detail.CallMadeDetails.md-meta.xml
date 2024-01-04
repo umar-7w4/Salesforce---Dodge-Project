@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>CallMadeDetails</label>
+    <protected>false</protected>
+    <values>
+        <field>Call_Link_ValidTime__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Request_Endpoint__c</field>
+        <value xsi:type="xsd:string">https://server-v6.xmreality.com/api/v11/call-link/mergeVar1/calls</value>
+    </values>
+    <values>
+        <field>Request_HeaderKey1__c</field>
+        <value xsi:type="xsd:string">accept</value>
+    </values>
+    <values>
+        <field>Request_HeaderKey2__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Request_HeaderKey3__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Request_HeaderValue1__c</field>
+        <value xsi:type="xsd:string">application/json</value>
+    </values>
+    <values>
+        <field>Request_HeaderValue2__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Request_HeaderValue3__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Request_Method__c</field>
+        <value xsi:type="xsd:string">GET</value>
+    </values>
+</CustomMetadata>

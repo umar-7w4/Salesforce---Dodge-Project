@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Pricing_request_product_approval_Bearings</fullName>
+        <description>Pricing request product approval - Bearings</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>gbullman@dodgeindustrial.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>janderson@dodgeindustrial.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Produt_Specialist_Team_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Pricing_request_product_approval_Gearings</fullName>
+        <description>Pricing request product approval - Gearings</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>jtavernier@dodgeindustrial.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ltrask@dodgeindustrial.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Produt_Specialist_Team_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Pricing_request_product_approval_PT_Components</fullName>
+        <description>Pricing request product approval - PT Components</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ckern@dodgeindustrial.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>delmore@dodgeindustrial.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Produt_Specialist_Team_Notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>PRP_Status_Update_Approved</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>PRP Status Update - Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PRP_Status_Update_Bearing_Approved</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>PRP Status Update Bearing - Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PRP_Status_Update_Bearing_In_Review</fullName>
+        <field>Status__c</field>
+        <literalValue>In Review</literalValue>
+        <name>PRP Status Update Bearing - In Review</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PRP_Status_Update_Bearing_Rejected</fullName>
+        <field>Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>PRP Status Update Bearing - Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PRP_Status_Update_Draft</fullName>
+        <field>Status__c</field>
+        <literalValue>Draft</literalValue>
+        <name>PRP Status Update - Draft</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PRP_Status_Update_Gearing_Approved</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>PRP Status Update Gearing - Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PRP_Status_Update_Gearing_In_Review</fullName>
+        <field>Status__c</field>
+        <literalValue>In Review</literalValue>
+        <name>PRP Status Update Gearing - In Review</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PRP_Status_Update_Gearing_Rejected</fullName>
+        <field>Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>PRP Status Update Gearing - Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PRP_Status_Update_In_Review</fullName>
+        <field>Status__c</field>
+        <literalValue>In Review</literalValue>
+        <name>PRP Status Update - In Review</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PRP_Status_Update_PT_Component_Approved</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>PRP Status Update PT Component Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PRP_Status_Update_PT_Component_In_Review</fullName>
+        <field>Status__c</field>
+        <literalValue>In Review</literalValue>
+        <name>PRP Status Update PT Component In Review</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PRP_Status_Update_PT_Component_Rejected</fullName>
+        <field>Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>PRP Status Update PT Component Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PRP_Status_Update_Rejected</fullName>
+        <field>Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>PRP Status Update - Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_submission_date</fullName>
+        <field>Approval_Submission_Date__c</field>
+        <formula>Today()</formula>
+        <name>Update submission date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_submission_date_Gearing</fullName>
+        <field>Approval_Submission_Date__c</field>
+        <formula>Today()</formula>
+        <name>Update submission date (Gearing)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_submission_date_PTC</fullName>
+        <field>Approval_Submission_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update submission date(PTC)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

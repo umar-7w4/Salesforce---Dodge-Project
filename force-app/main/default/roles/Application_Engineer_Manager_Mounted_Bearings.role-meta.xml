@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Application Engineer Manager - Mounted Bearings</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Application Engineer Manager - Mounted Bearings</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Application_Engineering_Department_Manager</parentRole>
+</Role>

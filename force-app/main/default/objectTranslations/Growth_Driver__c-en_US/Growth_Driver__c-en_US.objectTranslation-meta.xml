@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Growth Driver</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Growth Drivers</value>
+    </caseValues>
+    <layouts>
+        <layout>AdPro Utilization Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quarterly Updates</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Competitive Conversion Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quarterly Updates</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Current Customer Maintenance and Growth Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quarterly Updates</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Distributor Engagement Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quarterly Updates</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Customer Target Opportunities Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quarterly Updates</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Markets Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quarterly Updates</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>New_Initiative_AdPro</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Initiative_Competitive_Conversion</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Initiative_Distributor_Engagement</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Initiative_Maintenance_and_Growth</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Initiative_New_Customer_Target_Opps</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Initiative_New_Markets</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

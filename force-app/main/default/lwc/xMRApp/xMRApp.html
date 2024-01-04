@@ -1,0 +1,11 @@
+<template>
+    <div style="background-color: white; border-radius: 4px;">
+    <template if:true={displayCreateLinkPage}>
+        <c-x-M-R-Create-Call-Link-Page is-valid-token={isValidToken} record-id={recordId} usr-details={usrDetails} user-name={username} onuserlogout={handleUserLogout} onsendlinkdisplay={handleSendLink} onsigninopen={handlesigninopen} oninitiatecalllog={handleinitiatecalllog}></c-x-M-R-Create-Call-Link-Page>
+    </template>
+
+    <template if:true={displaySendLinkPage}>
+        <c-x-M-R-Send-Link-Page record-id={recordId} usr-details={usrDetails} user-name={username} respwrp={respwrp}  oncreatelinkdisplay={handleCreateLink}></c-x-M-R-Send-Link-Page>
+    </template>
+    </div>
+</template>

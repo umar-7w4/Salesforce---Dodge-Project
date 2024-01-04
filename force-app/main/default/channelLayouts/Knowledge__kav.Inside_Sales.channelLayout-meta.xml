@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ChannelLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesExcludeFieldLabels>false</doesExcludeFieldLabels>
+    <doesExcludeFiles>false</doesExcludeFiles>
+    <enabledChannels>Email</enabledChannels>
+    <label>Inside Sales</label>
+    <layoutItems>
+        <field>Article_Details__c</field>
+    </layoutItems>
+    <recordType>Articles2</recordType>
+</ChannelLayout>

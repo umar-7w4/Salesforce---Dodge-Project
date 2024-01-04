@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Share_Pricing_Requests</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>This rule provides read only access to all pricing requests with Roles and Subordinates of Pricing Manger</description>
+        <label>Share Pricing Requests</label>
+        <sharedTo>
+            <roleAndSubordinates>Pricing_Manager</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>One-time Discount (Quote),Ongoing Discount (PPL),Defensive,Administrative/Maintenance</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Completed,In Review</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Pricing_Requests_with_PM_Queue</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share Pricing Requests with PM Queue</label>
+        <sharedTo>
+            <group>Product_Management_Pricing_Approval_Grou</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>One-time Discount (Quote),Defensive,Ongoing Discount (PPL)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Completed,In Review</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Share_R_W_access_to_Administrative_Maintenance_PRs</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>This rule provides R/W access to Administrative/Maintenance Pricing requests with Roles and Subordinates of Pricing Manager if created by their team</description>
+        <label>Share R/W access to Administrative/Maintenance PRs</label>
+        <sharedTo>
+            <roleAndSubordinates>Pricing_Manager</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Pricing_Manager</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

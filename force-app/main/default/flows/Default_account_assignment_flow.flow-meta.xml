@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <name>Checking_for_end_customer_account</name>
+        <label>Checking for end customer account</label>
+        <locationX>545</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>Checking_for_rebate_account</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Checking_for_end_customer</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.End_Customer_Account__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_default_record_with_end_customer</targetReference>
+            </connector>
+            <label>Checking for end customer</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Checking_for_payer_account</name>
+        <label>Checking for payer account</label>
+        <locationX>974</locationX>
+        <locationY>695</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Checking_for_Payer</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Payer_Account__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_final_account_with_payer</targetReference>
+            </connector>
+            <label>Checking for Payer</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Checking_for_rebate_account</name>
+        <label>Checking for rebate account</label>
+        <locationX>776</locationX>
+        <locationY>575</locationY>
+        <defaultConnector>
+            <targetReference>Checking_for_payer_account</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Checking_for_rebate</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Rebate_Account__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_default_record_with_rebate</targetReference>
+            </connector>
+            <label>Checking for rebate</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Checking_Sold_to_account</name>
+        <label>Checking Sold to account</label>
+        <locationX>297</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>Checking_for_end_customer_account</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Checking_Sold_to</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Sold_to_Account__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_default_record_with_sold_to</targetReference>
+            </connector>
+            <label>Checking Sold to</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Default account assignment flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Default account assignment flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_default_record_with_end_customer</name>
+        <label>Update default record with end customer</label>
+        <locationX>314</locationX>
+        <locationY>575</locationY>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>$Record.End_Customer_Account__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_default_record_with_rebate</name>
+        <label>Update default record with rebate</label>
+        <locationX>578</locationX>
+        <locationY>695</locationY>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>$Record.Rebate_Account__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_default_record_with_sold_to</name>
+        <label>Update default record with sold to</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>$Record.Sold_to_Account__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_final_account_with_payer</name>
+        <label>Update final account with payer</label>
+        <locationX>842</locationX>
+        <locationY>815</locationY>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>$Record.Payer_Account__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>171</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Checking_Sold_to_account</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

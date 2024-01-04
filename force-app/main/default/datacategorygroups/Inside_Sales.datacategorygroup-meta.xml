@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Contacts</label>
+            <name>Contacts</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Pricing Files</label>
+            <name>Pricing_Files</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Information &amp; Procedures</label>
+            <name>Information_Procedures</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Maker Checker</label>
+            <name>Maker_Checker</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Product Information &amp; Catalogs</label>
+            <name>Product_Information_Catalogs</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Renewal Parts</label>
+            <name>Renewal_Parts</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Routing Guides</label>
+            <name>Routing_Guides</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Safety Tips</label>
+            <name>Safety_Tips</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Frequently Requested Documents</label>
+            <name>Frequently_Requested_Documents</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Inside Sales</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

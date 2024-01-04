@@ -1,0 +1,21 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" controller="PricingRequestRecordController">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="parentRecordId" type="String" />
+    <aura:attribute name="parentRecordName" type="String" />
+    <aura:attribute name="childRecordName" type="String" />
+    <aura:attribute name="childRecordId" type="String" />
+    <div class="slds-page-header slds-page-header--object-home">
+        
+        <div class="slds-page-header__title slds-truncate" title="{!v.parentRecordName}">
+            <a href="" aura:id="{!v.oppty2.Id}" onclick = "{!c.gotoList}" >Pricing Requests &gt; </a>  
+            <a href="" aura:id="{!v.oppty.Id}" onclick = "{!c.navigateToOppty}" >{!v.parentRecordName}</a> 
+
+        </div>
+    </div>
+    
+    <aura:html tag="style">
+        a {
+          font-size: 14px; /* Set the font size to 16 pixels */
+        }
+    </aura:html>
+</aura:component>

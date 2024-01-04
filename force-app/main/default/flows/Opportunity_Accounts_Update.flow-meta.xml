@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>Set_the_rebate_payer_account</name>
+        <label>Set the rebate payer account</label>
+        <locationX>314</locationX>
+        <locationY>695</locationY>
+        <assignmentItems>
+            <assignToReference>RebatePayerAccountRecord.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Account__r.Parent.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_the_payer_account_field_of_opportunity_related_to_rebate_account</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_the_sold_to_payer_account</name>
+        <label>Set the sold to payer account</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>SoldToPayerAccountRecord.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Account_Record.Parent.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Opportunity_sold_to_account_update</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Checking record type associated with account</description>
+        <name>Check_Record_Type_of_Account</name>
+        <label>Check Record Type of Account</label>
+        <locationX>446</locationX>
+        <locationY>455</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Sold_to_Account</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Account_Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sold-To</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_the_sold_to_payer_account</targetReference>
+            </connector>
+            <label>Sold to Account</label>
+        </rules>
+        <rules>
+            <name>Rebate_Account</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Account_Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rebate</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_the_accounts_record_type_of_rebate_account_opportunity</targetReference>
+            </connector>
+            <label>Rebate Account</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checking the account custom field whether its sold to or not</description>
+        <name>Check_the_accounts_record_type_of_rebate_account_opportunity</name>
+        <label>Check the accounts record type of rebate account opportunity</label>
+        <locationX>446</locationX>
+        <locationY>575</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Sold_to_Account_of_Rebate_Account_opportunity</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account__r.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sold-To</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_the_rebate_payer_account</targetReference>
+            </connector>
+            <label>Sold to Account of Rebate Account opportunity</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Opportunity Accounts Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity Accounts Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Getting account related to opportunity</description>
+        <name>Get_Account_Record</name>
+        <label>Get Account Record</label>
+        <locationX>446</locationX>
+        <locationY>335</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Record_Type_of_Account</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Account.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates the payer account</description>
+        <name>Opportunity_sold_to_account_update</name>
+        <label>Opportunity sold to account update</label>
+        <locationX>50</locationX>
+        <locationY>695</locationY>
+        <inputAssignments>
+            <field>Payer_Account__c</field>
+            <value>
+                <elementReference>SoldToPayerAccountRecord.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updating the payer account field of opportunity related to rebate account</description>
+        <name>Update_the_payer_account_field_of_opportunity_related_to_rebate_account</name>
+        <label>Update the payer account field of opportunity related to rebate account</label>
+        <locationX>314</locationX>
+        <locationY>815</locationY>
+        <inputAssignments>
+            <field>Payer_Account__c</field>
+            <value>
+                <elementReference>RebatePayerAccountRecord.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>320</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Account_Record</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <description>This variable will hold the parent id of account custom field of opportunity which is related to a rebate account</description>
+        <name>RebatePayerAccountRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <description>Account record related to the opportunity</description>
+        <name>SoldToPayerAccountRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+</Flow>

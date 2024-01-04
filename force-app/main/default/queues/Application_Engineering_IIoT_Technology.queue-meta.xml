@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>noreply@dodgenoreply.com</email>
+    <name>Application Engineering IIoT Technology</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Application_Engineering_IIoT_Technology</publicGroup>
+        </publicGroups>
+        <users>
+            <user>cjackson@dodgeindustrial.com</user>
+            <user>tpoveda-zambrano@dodgeindustrial.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>DodgeServiceChat</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

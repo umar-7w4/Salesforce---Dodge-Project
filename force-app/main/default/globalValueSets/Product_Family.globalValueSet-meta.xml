@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Smart Sensors</fullName>
+        <default>false</default>
+        <label>Smart Sensors</label>
+    </customValue>
+    <customValue>
+        <fullName>Mounted Bearings</fullName>
+        <default>false</default>
+        <label>Mounted Bearings</label>
+    </customValue>
+    <customValue>
+        <fullName>PT Components</fullName>
+        <default>false</default>
+        <label>PT Components</label>
+    </customValue>
+    <customValue>
+        <fullName>Lifecycle Solutions</fullName>
+        <default>false</default>
+        <label>Lifecycle Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>Gearing</fullName>
+        <default>false</default>
+        <label>Gearing</label>
+    </customValue>
+    <masterLabel>Product Family</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Product Management - Gearing Queue</name>
+    <queueMembers>
+        <users>
+            <user>jtavernier@dodgeindustrial.com</user>
+            <user>ltrask@dodgeindustrial.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Pricing_Request__c</sobjectType>
+    </queueSobject>
+</Queue>

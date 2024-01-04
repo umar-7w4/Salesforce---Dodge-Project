@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Chat Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout Template v1</layout>
+        <sections>
+            <label></label>
+            <section>Chat Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Page Layout - Application Engineering</layout>
+        <sections>
+            <label></label>
+            <section>Chat Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Page Layout - Inside Sales</layout>
+        <sections>
+            <label></label>
+            <section>Chat Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Assign_to_me</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Close_the_case</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>PreChat_Information</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Update_Case</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Update_Case_Fields</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Update_Case_Fields_Inside_Sales</name>
+    </quickActions>
+</CustomObjectTranslation>

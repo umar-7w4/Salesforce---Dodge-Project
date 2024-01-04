@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Pricing Team</name>
+    <queueMembers>
+        <users>
+            <user>gquinones@dodgeindustrial.com</user>
+            <user>msuarez@dodgeindustrial.com</user>
+            <user>schamberlin@dodgeindustrial.com</user>
+            <user>anasser@dodgeindustrial.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Pricing_Request__c</sobjectType>
+    </queueSobject>
+</Queue>

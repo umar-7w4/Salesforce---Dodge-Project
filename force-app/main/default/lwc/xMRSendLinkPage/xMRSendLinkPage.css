@@ -1,0 +1,23 @@
+.slds-button__icon{
+    display: none;
+}
+
+.move-button {
+    padding-left: 16px;
+    padding-top: 23px;
+}
+
+.other-user {
+    background-color: lightpink;
+}
+
+.warning-box {
+    margin-bottom: 4px;
+    margin-top: 4px;
+    padding: 12px;
+    background: #f0f0f0;
+    border-color: #cc0000;
+    border-width: 1px;
+    border-radius: 4px;
+    border-style: solid
+}

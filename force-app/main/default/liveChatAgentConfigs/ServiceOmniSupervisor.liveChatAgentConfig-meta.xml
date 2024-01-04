@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatAgentConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <profiles>
+            <profile>Admin</profile>
+        </profiles>
+        <users>
+            <user>astansell@dodgeindustrial.com</user>
+            <user>cbrown@dodgeindustrial.com</user>
+            <user>cstenhouse@dodgeindustrial.com</user>
+            <user>estoner@dodgeindustrial.com</user>
+            <user>mchildress@dodgeindustrial.com</user>
+            <user>rwilson@dodgeindustrial.com</user>
+            <user>tpoveda-zambrano@dodgeindustrial.com</user>
+        </users>
+    </assignments>
+    <disableTransferConferenceGreeting>true</disableTransferConferenceGreeting>
+    <enableAgentFileTransfer>true</enableAgentFileTransfer>
+    <enableAgentSneakPeek>true</enableAgentSneakPeek>
+    <enableAssistanceFlag>true</enableAssistanceFlag>
+    <enableAutoAwayOnDecline>false</enableAutoAwayOnDecline>
+    <enableAutoAwayOnPushTimeout>true</enableAutoAwayOnPushTimeout>
+    <enableChatConferencing>true</enableChatConferencing>
+    <enableChatMonitoring>true</enableChatMonitoring>
+    <enableChatTransferToAgent>true</enableChatTransferToAgent>
+    <enableChatTransferToButton>true</enableChatTransferToButton>
+    <enableChatTransferToSkill>true</enableChatTransferToSkill>
+    <enableLogoutSound>true</enableLogoutSound>
+    <enableNotifications>true</enableNotifications>
+    <enableRequestSound>true</enableRequestSound>
+    <enableSneakPeek>true</enableSneakPeek>
+    <enableVisitorBlocking>true</enableVisitorBlocking>
+    <enableWhisperMessage>true</enableWhisperMessage>
+    <label>ServiceOmniSupervisor</label>
+    <supervisorDefaultAgentStatusFilter>Online</supervisorDefaultAgentStatusFilter>
+</LiveChatAgentConfig>

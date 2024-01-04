@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>ChatUsers</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Application_Engineering_Gearing</publicGroup>
+            <publicGroup>Application_Engineering_IIoT_Technology</publicGroup>
+            <publicGroup>Application_Engineering_Mounted_Bearings</publicGroup>
+            <publicGroup>Application_Engineering_PTC_BMH</publicGroup>
+            <publicGroup>Inside_Sales</publicGroup>
+        </publicGroups>
+        <users>
+            <user>abinaya.sivagnanam@gerent.com.dodge</user>
+            <user>prasad.jagilinki@gerent.com.dodge</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>DodgeServiceChat</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>LiveChatTranscript</sobjectType>
+    </queueSobject>
+</Queue>

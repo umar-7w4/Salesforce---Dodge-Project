@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" controller="ConvertToVisitReport" >
+    <div class="slds-align--absolute-center">
+        <h3 class="slds-section-title--divider">Are you sure you want to convert this event to a visit report?</h3>
+        <br/>
+    </div>
+    <br/>
+    <button class="slds-button slds-button_brand slds-align_absolute-center" onclick="{!c.ConvertIt}">Next</button>
+</aura:component>

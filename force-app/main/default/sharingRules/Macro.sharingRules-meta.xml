@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Macros_create_permission_AE</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>These users will be able to create macros for application engineering</description>
+        <label>Macros create permission - AE</label>
+        <sharedTo>
+            <group>Macros_management_AE</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Macros_management_AE</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Macros_create_permission_Inside_sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>These users will be able to create macros for Inside sales</description>
+        <label>Macros create permission - Inside sales</label>
+        <sharedTo>
+            <group>Macros_Management_Inside_Sales</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Macros_Management_Inside_Sales</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

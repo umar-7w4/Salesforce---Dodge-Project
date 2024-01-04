@@ -4,12 +4,7 @@
 |
 |  Filename: XMRTestDataFactory.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
-|
-|  Description: used for test data creation
-|      
-| Change Log:
-| 2021-11-06  Jayanth Balakrishna  Initial Development.
+|  Author: Umar Mohammad
 ----------------------------------------------------------------------------
 */
 

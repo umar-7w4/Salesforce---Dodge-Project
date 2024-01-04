@@ -4,12 +4,7 @@
 |
 |  Filename: XMRealitySendLinkHelper.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
-|
-|  Description: this class is used to send Email and SMS for recipients 
-|      
-| Change Log:
-| 2021-10-18  Jayanth Balakrishna  Initial Development.
+|  Author: Umar Mohammad
 ----------------------------------------------------------------------------
 */
 public class XMRealitySendLinkHelper {

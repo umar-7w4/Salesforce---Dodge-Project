@@ -4,13 +4,7 @@
 |
 |  Filename: XMRealityCreateLinkTest.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
-|
-|  Description: Test class for XMRCallLogsCreationBatch, XMRCallLogHelper,
-|				XMRCallLogsCleanUpBatch
-|      
-| Change Log:
-| 2021-11-06  Jayanth Balakrishna  Initial Development.
+|  Author: Umar Mohammad
 ----------------------------------------------------------------------------
 */
 @isTest

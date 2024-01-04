@@ -4,12 +4,10 @@
 |
 |  Filename: CreateLinkWrapper.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
+|  Author: Umar Mohammad
 |
 |  Description: Wrapper used for returning XMR details to XMRCreatelink/XMRSendLink Page
 |      
-| Change Log:
-| 2021-10-28  Jayanth Balakrishna  Initial Development.
 ----------------------------------------------------------------------------
 */
 

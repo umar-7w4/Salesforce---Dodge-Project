@@ -4,12 +4,9 @@
 |
 |  Filename: SendSMSRequestWrapper.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
+|  Author: Umar Mohammad
 |
 |  Description: JSON to Apex request wrapper for sending SMS
-|      
-| Change Log:
-| 2021-10-18  Jayanth Balakrishna  Initial Development.
 ----------------------------------------------------------------------------
 */
 

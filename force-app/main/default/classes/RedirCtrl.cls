@@ -4,13 +4,10 @@
 |
 |  Filename: RedirCtrl.cls
 |
-|  Author: Peter Friberg, Fluido Sweden AB
+|  Author: Umar Mohammad
 |
 |  Description:
 |     XXXXX
-|
-| Change Log:
-| 2021-11-04  Peter Friberg  Initial Development.
 ----------------------------------------------------------------------------
 */
 

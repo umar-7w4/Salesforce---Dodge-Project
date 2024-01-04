@@ -4,12 +4,7 @@
 |
 |  Filename: XMRCallLogsWrapper.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
-|
-|  Description: CallLog Creation wrapper class
-|      
-| Change Log:
-| 2021-10-18  Jayanth Balakrishna  Initial Development.
+|  Author: Umar Mohammad
 ----------------------------------------------------------------------------
 */
 

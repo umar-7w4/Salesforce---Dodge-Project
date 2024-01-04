@@ -4,13 +4,7 @@
 |
 |  Filename: XMRUnauthenticateHelper.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
-|
-|  Description: XMR Login Unauthentication helper, This is created
-|				for XMRFederationLoginPage
-|      
-| Change Log:
-| 2021-10-18  Jayanth Balakrishna  Initial Development.
+|  Author: Umar Mohammad
 ----------------------------------------------------------------------------
 */
 

@@ -4,12 +4,10 @@
 |
 |  Filename: SendSMSFailureResponseWrapper.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
+|  Author: Umar Mohammad
 |
 |  Description: JSON to Apex failure response wrapper for sending SMS
 |      
-| Change Log:
-| 2021-10-18  Jayanth Balakrishna  Initial Development.
 ----------------------------------------------------------------------------
 */
 

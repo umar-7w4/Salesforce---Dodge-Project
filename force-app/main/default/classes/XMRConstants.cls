@@ -4,12 +4,7 @@
 |
 |  Filename: XMRConstants.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
-|
-|  Description: Constant Class used for string literals and custom label
-|      
-| Change Log:
-| 2021-10-18  Jayanth Balakrishna  Initial Development.
+|  Author: Umar Mohammad
 ----------------------------------------------------------------------------
 */
 

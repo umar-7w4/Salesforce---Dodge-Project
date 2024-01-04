@@ -4,12 +4,7 @@
 |
 |  Filename: XMRUnauthenticateHelperTest.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
-|
-|  Description: Test class for XMRUnauthenticateHelper
-|      
-| Change Log:
-| 2021-11-06  Jayanth Balakrishna  Initial Development.
+|  Author: Umar Mohammad
 ----------------------------------------------------------------------------
 */
 

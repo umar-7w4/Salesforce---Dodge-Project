@@ -4,12 +4,10 @@
 |
 |  Filename: CreatLinkHelper.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
+|  Author: Umar Mohammad
 |
 |  Description: XMR Call Links are created in this class via HTTPcallout 
 |      
-| Change Log:
-| 2021-11-06  Jayanth Balakrishna  Initial Development.
 ----------------------------------------------------------------------------
 */
 public class CreateLinkHelper {

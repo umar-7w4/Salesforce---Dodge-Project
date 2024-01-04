@@ -4,14 +4,7 @@
 |
 |  Filename: XMRCallLogsCreationBatch.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
-|
-|  Description: Batch class to create call links
-|  				//to be run for 10 min interval
-|  				//If any criteria is required then to be added
-|      
-| Change Log:
-| 2021-11-09  Jayanth Balakrishna  Initial Development.
+|  Author: Umar Mohammad
 ----------------------------------------------------------------------------
 */
 

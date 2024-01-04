@@ -4,13 +4,7 @@
 |
 |  Filename: XMRealityCreateLinkTest.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
-|
-|  Description: Test class for XMRealityCreateLinkController,CreatLinkHelper ,
-|				CreateLinkWrapper, CreateLinkRequestWrapper, CreateLinkResponseWrapper
-|      
-| Change Log:
-| 2021-11-06  Jayanth Balakrishna  Initial Development.
+|  Author: Umar Mohammad
 ----------------------------------------------------------------------------
 */
 @IsTest

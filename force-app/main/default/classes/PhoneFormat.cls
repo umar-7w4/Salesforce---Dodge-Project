@@ -4,7 +4,7 @@
 |
 |  Filename: PhoneFormat.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
+|  Author: Umar Mohammad
 |
 |  Description: Task Call Log Creation helper
 |      

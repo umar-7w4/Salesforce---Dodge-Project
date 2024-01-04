@@ -4,13 +4,7 @@
 |
 |  Filename: XMRCallLogsCleanUpBatch.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
-|
-|  Description: Batch class to clean up the expired call links
-|				//to be run for 1 hour interval
-|      
-| Change Log:
-| 2021-11-09  Jayanth Balakrishna  Initial Development.
+|  Author: Umar Mohammad
 ----------------------------------------------------------------------------
 */
 global class XMRCallLogsCleanUpBatch implements Schedulable, Database.Batchable<SObject> {

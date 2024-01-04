@@ -4,14 +4,7 @@
 |
 |  Filename: XMRealityCreateLinkController.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
-|
-|  Description: * XMR Call Links are created in this class via HTTPcallout 
- * 				 * Session timeout/ validion for a call link is perfomed
- * 				 * User Logout functionality 
-|      
-| Change Log:
-| 2021-11-06  Jayanth Balakrishna  Initial Development.
+|  Author: Umar Mohammad
 ----------------------------------------------------------------------------
 */
 

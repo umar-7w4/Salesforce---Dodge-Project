@@ -59,4 +59,8 @@ This project enhances Salesforce CRM functionalities using Apex, Lightning Web C
 Contributions to this project are encouraged, adhering to Salesforce best practices.
 
 ## License
+This project is licensed under the @2023 Umar Mohammad
+
+## Contact
+If you have any questions or want to contribute, please email us at mohammadumar7w4@gmail.com
 

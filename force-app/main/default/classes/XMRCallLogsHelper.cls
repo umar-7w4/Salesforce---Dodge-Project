@@ -4,12 +4,7 @@
 |
 |  Filename: XMRCallLogsHelper.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
-|
-|  Description: CallLogs are placed under custom settings to ru through batch
-|      
-| Change Log:
-| 2021-11-09  Jayanth Balakrishna  Initial Development.
+|  Author: Umar Mohammad
 ----------------------------------------------------------------------------
 */
 public class XMRCallLogsHelper {

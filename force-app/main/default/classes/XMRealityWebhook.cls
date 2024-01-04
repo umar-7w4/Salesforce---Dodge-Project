@@ -4,13 +4,7 @@
 |
 |  Filename: XMRRealityWebhook.cls
 |
-|  Author: Peter Friberg, Fluido Sweden AB
-|
-|  Description:
-|     XXXXX
-|
-| Change Log:
-| 2021-11-02  Peter Friberg  Initial Development.
+|  Author: Umar Mohammad
 ----------------------------------------------------------------------------
 */
 

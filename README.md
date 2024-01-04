@@ -1,7 +1,7 @@
 # Salesforce Custom CRM System
 
 ## Overview
-This project enhances Salesforce CRM functionalities using Apex, Lightning Web Components (LWC), and SOQL. It features custom development for account management, sales processes, case handling, and more.
+This project enhances Salesforce CRM functionalities using Apex, Lightning Web Components (LWC), and SOQL. It features custom development for account management, sales processes, pricing processes, case handling, and Integration with other software systems like XM Reality and Five9.
 
 ## Detailed Class Descriptions
 

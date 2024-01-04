@@ -8,8 +8,6 @@
 |
 |  Description: Task Call Log Creation helper
 |      
-| Change Log:
-| 2021-11-09  Jayanth Balakrishna  Initial Development.
 ----------------------------------------------------------------------------
 */
 public class PhoneFormat {

@@ -4,12 +4,7 @@
 |
 |  Filename: XMRCallLogResponseWrapper.cls
 |
-|  Author: Jayanth Balakrishna, Fluido Sweden AB
-|
-|  Description: Response wrapper for log calls
-|      
-| Change Log:
-| 2021-11-09  Jayanth Balakrishna  Initial Development.
+|  Author: Umar Mohammad
 ----------------------------------------------------------------------------
 */
 public class XMRCallLogResponseWrapper{
